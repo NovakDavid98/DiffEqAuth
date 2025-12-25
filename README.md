@@ -10,6 +10,20 @@
 
 ---
 
+## 📚 Deep Dive Documentation
+
+> **Want to understand the mathematics and security analysis?**
+> 
+> ### 👉 **[Read the Technical Deep Dive](docs/technical_deep_dive.md)** 👈
+> 
+> Covers:
+> - Mathematical foundations (ODEs, attractors)
+> - Security proofs and analysis
+> - Implementation details
+> - Hardware deployment guide
+
+---
+
 ## How It Works
 
 ![Authentication Flow](assets/auth_flow.png)
@@ -92,6 +106,17 @@ make test_physics && ./test_physics
 
 ---
 
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| **[📖 Technical Deep Dive](docs/technical_deep_dive.md)** | **Math, security, implementation** |
+| [Auth Secret Mathematics](docs/auth_secret_mathematics.md) | k, γ, seed parameters explained |
+| [STM32 Deployment Guide](docs/smart_lock_stm32_guide.md) | Hardware setup for smart locks |
+| [Comparative Analysis](docs/comparative_analysis.md) | vs RSA, HMAC, biometrics |
+
+---
+
 ## Project Structure
 
 ```
@@ -103,22 +128,12 @@ DiffEqAuth/
 ├── c_implementation/       # Embedded C implementation
 │   ├── physics_auth.c/h    # Core engine (~150 lines)
 │   ├── test_physics.c      # Unit tests
-│   ├── puf_test.c          # Hardware PUF tests
-│   └── critical_validation.c
+│   └── puf_test.c          # Hardware PUF tests
 │
 ├── docs/                   # Documentation
-│   ├── technical_deep_dive.md
-│   ├── auth_secret_mathematics.md
-│   ├── smart_lock_stm32_guide.md
-│   └── comparative_analysis.md
+│   └── technical_deep_dive.md  # ⭐ START HERE
 │
 └── assets/                 # Visualizations
-    ├── banner.png
-    ├── auth_flow.png
-    ├── dynamics.png
-    ├── performance.png
-    ├── puf_uniqueness.png
-    └── security.png
 ```
 
 ---
