@@ -15,6 +15,7 @@
 > **Want to understand the mathematics and security analysis?**
 > 
 > ### 👉 **[Read the Technical Deep Dive](docs/technical_deep_dive.md)** 👈
+> ### 🛡️ **[Read the Security Hardening Report (V3)](docs/security_hardening_report.md)** 👈
 > 
 > Covers:
 > - Mathematical foundations (ODEs, attractors)
